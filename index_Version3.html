@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PolyPrompts - Multi-AI Prompt Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>PolyPrompts <span>🚀</span></h1>
+    <p class="subtitle">A simple multi-AI prompt playground. <b>Only ChatGPT works. Others are for UI demo!</b></p>
+    <section class="card-list">
+      <!-- ChatGPT (OpenAI) Card -->
+      <div class="card">
+        <h2>ChatGPT (OpenAI)</h2>
+        <select id="modelSelect">
+          <option value="gpt-4o-mini">gpt-4o-mini</option>
+          <option value="gpt-4o">gpt-4o</option>
+          <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+        </select>
+        <textarea id="chatgpt-prompt" rows="4" placeholder="Type your prompt here..."></textarea>
+        <div class="actions">
+          <button id="chatgpt-send">Send</button>
+          <button id="chatgpt-clear" type="button">Clear</button>
+        </div>
+        <div id="chatgpt-error" class="error"></div>
+        <pre id="chatgpt-output" class="output"></pre>
+      </div>
+      <!-- Placeholder cards for other AIs -->
+      <div class="card card-disabled">
+        <h2>Gemini (Google)</h2>
+        <div class="coming-soon">Coming soon</div>
+      </div>
+      <div class="card card-disabled">
+        <h2>Cohere</h2>
+        <div class="coming-soon">Coming soon</div>
+      </div>
+      <div class="card card-disabled">
+        <h2>Claude (Anthropic)</h2>
+        <div class="coming-soon">Coming soon</div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        © 2024 PolyPrompts. Built by <a href="https://github.com/shivshankarrr121x" target="_blank">shivshankarrr121x</a>.
+        <br>
+        <small>
+          Only OpenAI/ChatGPT is functional in this demo. Your API key is stored in the frontend for demo purposes.
+        </small>
+      </p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
